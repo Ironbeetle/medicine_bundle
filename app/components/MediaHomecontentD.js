@@ -3,10 +3,9 @@ import React, {useState, useEffect} from 'react';
 import Image from "next/image";
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import MediaBkgD from '../../../public/TradTeachingsBKG.jpg';
-import MediaBkgM from '../../../public/GeneralBKGM.jpg';
-import MediaBkgT from '../../../public/TradTeachingsBKGT.jpg';
-import HamburgerMenu from '../components/HamburgerMenu';
+import MediaBkgD from '../../public/TradTeachingsBKG.jpg';
+import MediaBkgM from '../../public/GeneralBKGM.jpg';
+import MediaBkgT from '../../public/TradTeachingsBKGT.jpg';
 function MediaHomecontentD(){
     const [width, setWidth] = useState(0);
     useEffect(() => {
@@ -102,9 +101,7 @@ function MediaHomecontentD(){
     }
     return(
         <>
-            <div className="hamlink">
-                <HamburgerMenu/>
-            </div>
+           
             <div className="bkgcontainer">
                 <Image
                     src={Bkgselector()}

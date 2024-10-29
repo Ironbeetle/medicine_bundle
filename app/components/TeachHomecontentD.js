@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import HamburgerMenu from '../components/HamburgerMenu';
 export default function TeachHomecontentD(){
     const [activeTab, setActiveTab] = useState(1);
     const PrayerView = () => {
@@ -136,9 +135,7 @@ export default function TeachHomecontentD(){
             animate={{opacity: 1}}
             transition={{duration: 1, ease: 'easeInOut'}}
         >
-            <div className="hamlink">
-                <HamburgerMenu/>
-            </div>
+          
             <div className="bkgcontainer">
                 <video autoPlay loop className='videobkg'>
                     <source src="/TradTeachBKG.webm" type="video/webm; codecs=vp9"/>
